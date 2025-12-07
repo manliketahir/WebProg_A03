@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Saad Ahmed",
+    "role": "Batsman",
+    "bio": "Top-order batsman known for consistency.",
+    "image": "/assets/player1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tahir Minhas",
+    "role": "Bowler",
+    "bio": "Fast bowler with swing.",
+    "image": "/assets/player2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Usman Khan",
+    "role": "Allrounder",
+    "bio": "Powerful hitter and useful medium pace.",
+    "image": "/assets/player3.jpg"
+  }
+]

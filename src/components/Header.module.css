@@ -1,0 +1,50 @@
+.header {
+  /* Glassmorphism Effect (Light Mode) */
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* FIXED: Now targets .dark anywhere (html or body) */
+:global(.dark) .header {
+  background: rgba(15, 23, 42, 0.85); /* Dark Navy with opacity */
+  border-bottom: 1px solid var(--border);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, var(--accent), #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav a {
+  color: var(--muted);
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--accent);
+  background: rgba(125, 125, 125, 0.1);
+}
+
+.active {
+  color: var(--accent) !important;
+  background: rgba(59, 130, 246, 0.1);
+}

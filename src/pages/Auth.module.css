@@ -1,0 +1,78 @@
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min_height: 80vh;
+  /* background-color: var(--bg);  -- Taken from body, so redundant or transparent */
+}
+
+.authForm {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  width: 100%;
+  max-width: 400px;
+  color: var(--text);
+}
+
+.authForm h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-hover);
+  /* Imitating ring */
+}
+
+.authButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-weight: 600;
+}
+
+.authButton:hover {
+  background-color: var(--accent-hover);
+}
+
+.errorMessage {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  text-align: center;
+}

@@ -1,0 +1,57 @@
+Functional Requirements for the MERN Application
+
+1. User Authentication & Authorization
+ User registration & login via JWT
+ Password hashing using bcrypt
+ Access tokens + optional refresh tokens
+ Role-based access control (e.g., user, admin)
+
+ Route protection middleware
+ Rate limiting & brute-force prevention
+2. CRUD Operations for Main Business Entity
+(Entity depends on your Assignment 2 project: posts, products, tasks, etc.)
+ Create, Read, Update, Delete
+ Server-side and client-side validation
+ Pagination (?page= and ?limit=)
+ Search and filtering (?search=, ?sort=)
+ Ownership checks (only item creator can edit/delete)
+3. Dashboard & Profile Management
+ JWT-protected dashboard
+ Data analytics (counts, comparison, maybe charts)
+ User profile update
+ Password reset/change flow
+4. API Requirements
+Your Node.js + Express backend MUST include:
+ RESTful routes
+ Input validation (Joi, validator.js, or custom)
+ Response messages with correct status codes
+ Error handling middleware
+ Authentication middleware (JWT verify)
+ Database model(s) using Mongoose
+ Image upload
+ Role-based access (admin/user)
+ Email notifications
+5. Database Requirements
+ MongoDB collection for users and images
+ Collection for your main entity
+ Schema validation with Mongoose
+ Proper relationships if needed (e.g., user owns posts)
+6. Deployment Requirements
+ Deploy FE on Vercel/Netlify
+7. Backend must include
+ MVC or service-layer architecture
+ Modularized route/controller structure
+ Error-handling middleware
+
+ Async error wrapper (catchAsync)
+ Environment variables via dotenv
+ Mongoose schema & validation
+8. Security Requirements
+ CORS configuration
+ Input sanitization (NoSQL injection prevention)
+ Rate Limiting
+9. Testing Requirements
+Add unit test for one POST and PATCH Api using at least one of the following:
+ Unit tests (Jest)
+ API testing (Supertest)
+ E2E tests (Cypress)
